@@ -7,13 +7,11 @@ const SearchResult = ({ data }) => {
       <Container>
         <FoodCards>
 
-        {data?.map(({name, image, text,price}) =>
+        {data?.map(({name, text,price}) =>
           <FoodCard
             key={name}>
             
-            <div className="food_image">
-          <img src={BASE_URL + image}  />
-        </div>
+            
         <div className="food_info">
           <div className="info">
             <h3>{name}</h3>
